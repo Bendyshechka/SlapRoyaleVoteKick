@@ -1,8 +1,12 @@
+
 local Username
-if _G.Username == nil or _G.Username == "" then
+local Time
+if _G.Config == nil or _G.Config.Username == nil or _G.Config.Username == "" or _G.Config.Time == nil or _G.Config.Time == "" then
+	Time = 15
 	Username = "Sigma"
 else
-	Username = _G.Username
+	Time = _G.Config.Time
+	Username = _G.Config.Username
 end
 
 
@@ -12,7 +16,7 @@ end
 
 
 
-wait(20)
+wait(Time)
 function showNotice(text)
 	local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
