@@ -1,4 +1,3 @@
-
 local Username
 local Time
 if _G.Config == nil or _G.Config.Username == nil or _G.Config.Username == "" or _G.Config.Time == nil or _G.Config.Time == "" then
